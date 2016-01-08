@@ -7,7 +7,7 @@ local filepath = '/ramcache/renders/'
 
 params = {
   n_glimpses=4,
-  n_samples=12,
+  n_samples=20,
   loc = {{0,0,0.1,0},{0,0.5,0.2,0},{0,1,-0.1,0},{0,-0.5,-0.2,0}},
   n_batches=24,
   batch_size = 56
@@ -35,7 +35,7 @@ function main()
     x[i] = {}
     y[i] = {}
   end
-  for a = 1,10 do
+  for a = 1,16 do
     for i = 1,params.n_batches do
       print(i)
       local indices = {}
